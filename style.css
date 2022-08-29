@@ -149,12 +149,12 @@ p.p{
 }
 
 .time{
-    grid-area: time;
+    flex: 20%;
     padding-left: 5px; 
 }
 
 .school{
-    grid-area: school;
+    flex: 80%;
 }
 
 p.name1{
@@ -168,10 +168,10 @@ p.year{
     text-align: center;
 }
 .block{
-    display: grid;
-    justify-content: center;
-    grid-template-areas: 'school time';
-    grid-template-columns: 5fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
 }
 
 /* 5th part */
