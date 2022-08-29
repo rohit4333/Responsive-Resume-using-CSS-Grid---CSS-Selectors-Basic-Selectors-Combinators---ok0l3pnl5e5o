@@ -176,7 +176,7 @@ p.year{
 
 /* 5th part */
 
-@media screen and (max-width:674px){
+@media screen and (max-width:673px){
     .main-content{
         display:grid;
         grid-template-columns: repaet(1, 1fr);
