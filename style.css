@@ -6,4 +6,185 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Write CSS code below */
+body{
+    box-sizing: border-box;
+}
+
+
+/* 1st part */
+
+.left-section{
+    grid-area: left;
+    display:block;
+    background-color: rgb(2, 74, 102);
+    width :90%; 
+}
+
+.right-section{
+    grid-area: right;
+    display:block;
+    background-color: rgb(149, 189, 241);
+    width:90%;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 300px 700px;
+    grid-template-areas: 'left right';
+    min-height: 1000px;
+
+}
+
+.right-main-content{
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.profile-image{
+    /* padding: 1rem; */
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+
+}
+
+.left-content{
+    padding: 1rem;
+}
+
+/* 2nd part */
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    color: white;
+}
+
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    color: rgb(101, 109, 223);
+}
+
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+
+}
+
+.skills{
+    text-align: center;
+    color: white;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* 3rd part */
+
+.personal-details{
+    font-size: 0.6rem;
+    color:white;
+}
+
+.icon{
+    list-style: none;
+    padding: 2px;
+}
+
+.social-media li{
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+/* 4Th part */
+
+
+.right-title{
+    text-transform: uppercase !important;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.title{
+    text-transform: uppercase !important;
+    font-size: 0.8rem;
+    font-weight: 900;
+    padding-left: 0.5rem;
+    letter-spacing: 0.8px;
+}
+p.p{
+    padding-left: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.time{
+    grid-area: time;
+    padding-left: 5px; 
+}
+
+.school{
+    grid-area: school;
+}
+
+p.name1{
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+p.year{
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+.block{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 'school time';
+    grid-template-columns: 5fr 1fr;
+}
+
+/* 5th part */
+
+@media screen and (max-width:674px){
+    .main-content{
+        display:grid;
+        grid-template-columns: repaet(1, 1fr);
+        min-height: 1000px;
+        grid-template-areas: 'left'
+        'right';
+        
+
+    }
+
+}
