@@ -16,8 +16,7 @@
 .left-section{
     grid-area: left;
     display:block;
-    background-color: rgb(2, 74, 102);
-    width :90%; 
+    background-color: rgb(2, 74, 102); 
 }
 
 .right-section{
@@ -186,5 +185,12 @@ p.year{
         
 
     }
+    .left-section{
+        grid-area: left;
+        display:block;
+        background-color: rgb(2, 74, 102); 
+        width: 90%;
+    }
+    
 
 }
