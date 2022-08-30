@@ -24,7 +24,7 @@
 
 .left-section{
     grid-area: left;
-grid-column: 1;
+grid-column: span 1;
     display:block;
     background-color: rgb(2, 74, 102); 
 }
@@ -32,7 +32,7 @@ grid-column: 1;
 .right-section{
     grid-area: right;
 /*     grid-column: 2/ span 2; */
-    grid-column: 2;
+    grid-column: span 1/ span 2;
     display:block;
     background-color: rgb(149, 189, 241);
     
